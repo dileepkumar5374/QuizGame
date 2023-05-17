@@ -1,0 +1,26 @@
+#play-again {
+  width: 200px;
+  height: 30px;
+  margin-top: 370px;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 1px rgb(95, 95, 95);
+}
+
+#play-again:hover {
+  background-color: green;
+  box-shadow: 2px 2px 5px 1px rgb(253, 252, 252);
+}
+
+#play-again:active {
+  box-shadow: none;
+}
+
+.show-score {
+  color: rgb(2, 230, 21);
+  position: absolute;
+  top: 20%;
+  font-size: 40px;
+  text-align: center;
+}
