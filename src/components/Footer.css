@@ -1,0 +1,83 @@
+.main-footer {
+  margin-top: 50px;
+}
+
+.icon-arrengement {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fb {
+  padding: 5px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(252, 250, 252);
+}
+.fb:hover {
+  transform: scale(1.07);
+}
+
+.insta {
+  padding: 5px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(252, 250, 252);
+}
+.insta:hover {
+  transform: scale(1.07);
+}
+
+.utube {
+  padding: 5px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(252, 250, 252);
+}
+.utube:hover {
+  transform: scale(1.07);
+}
+
+.twitter {
+  padding: 5px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(252, 250, 252);
+}
+.twitter:hover {
+  transform: scale(1.07);
+}
+
+.linkedin {
+  padding: 5px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(252, 250, 252);
+}
+.linkedin:hover {
+  transform: scale(1.07);
+}
+
+.icon-flex {
+  font-size: 30px;
+}
+
+.footer-list {
+  justify-content: center;
+  margin-top: 40px;
+  display: flex;
+  list-style: none;
+  gap: 70px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.two {
+  margin-top: 20px;
+}
+
+.designBy {
+  background-color: aquamarine;
+}

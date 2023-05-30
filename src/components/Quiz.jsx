@@ -37,54 +37,59 @@ function Quiz() {
     setShowResult(false);
   };
   return (
-    <div>
-      <p className="heading">QUIZ APP</p>
-      <div className="container">
-        {showResult ? (
-          <QuizResult
-            score={score}
-            totalScore={QuizData.length}
-            playAgain={restartGame}
-          />
-        ) : (
-          <>
-            <div className="question">
-              <span id="question-num">{quesNum + 1}/10. </span>
-              <span id="question-text">{QuizData[quesNum].question}</span>
-            </div>
-            <div className="option-container">
-              {QuizData[quesNum].options.map((option, idx) => {
-                return (
-                  <button
-                    className={`option-btn ${
-                      selectedOption == idx + 1 ? "checked" : null
-                    }`}
-                    key={idx}
-                    onClick={() => setSelectedOption(idx + 1)}
-                  >
-                    {option}
-                  </button>
-                );
-              })}
-            </div>
-            <div className="btns">
-              <input
-                type="button"
-                value="Previous"
-                id="previous-btn"
-                onClick={previousQuestion}
-              ></input>
-              <input
-                type="button"
-                value="Next"
-                id="next-btn"
-                onClick={changeQuestion}
-              ></input>
-            </div>
-          </>
-        )}
+    <>
+      <div className="App">
+        <p className="heading">QUIZ APP</p>
+        <div className="container">
+          {showResult ? (
+            <QuizResult
+              score={score}
+              totalScore={QuizData.length}
+              playAgain={restartGame}
+            />
+          ) : (
+            <>
+              <div className="question">
+                <span id="question-num">{quesNum + 1}/10. </span>
+                <span id="question-text">{QuizData[quesNum].question}</span>
+              </div>
+              <div className="option-container">
+                {QuizData[quesNum].options.map((option, idx) => {
+                  return (
+                    <button
+                      className={`option-btn ${
+                        selectedOption == idx + 1 ? "checked" : null
+                      }`}
+                      key={idx}
+                      onClick={() => setSelectedOption(idx + 1)}
+                    >
+                      {option}
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="btns">
+                <input
+                  type="button"
+                  value="Previous"
+                  id="previous-btn"
+                  onClick={previousQuestion}
+                ></input>
+                <input
+                  type="button"
+                  value="Next"
+                  id="next-btn"
+                  onClick={changeQuestion}
+                ></input>
+              </div>
+            </>
+          )}
+        </div>
       </div>
-    </div>
+      <div className="footer-divider">
+        <hr size="5" color="white" width="115%" />
+      </div>
+    </>
   );
 }
 
